@@ -1,0 +1,14 @@
+[
+  {
+    "isbn": "1234567890",
+    "title": "Node.js Asoslari",
+    "author": "Sherzodxo'ja",
+    "reviews": []
+  },
+  {
+    "isbn": "9876543210",
+    "title": "JavaScript Dasturlash",
+    "author": "Ali Developer",
+    "reviews": []
+  }
+]
