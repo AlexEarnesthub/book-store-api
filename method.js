@@ -46,7 +46,7 @@ if (require.main === module) {
   // 11: Promise bilan ISBN orqali qidirish
   getBookByISBN('1234567890')
     .then(response => {
-      console.log('ISBN bo‘yicha topildi (promise):', response.data);
+      console.log('ISBN boyicha topildi (promise):', response.data);
     })
     .catch(error => {
       console.error('Xatolik (promise):', error.message);
@@ -56,7 +56,7 @@ if (require.main === module) {
   (async () => {
     try {
       const authorBooks = await getBooksByAuthor('Sherzodxo\'ja');
-      console.log('Muallif bo‘yicha topildi (async):', authorBooks);
+      console.log('Muallif boyicha topildi (async):', authorBooks);
     } catch (error) {
       console.error('Xatolik (author async):', error.message);
     }
@@ -66,7 +66,7 @@ if (require.main === module) {
   (async () => {
     try {
       const titleBooks = await getBooksByTitle('Node.js');
-      console.log('Nomi bo‘yicha topildi (async):', titleBooks);
+      console.log('Nomi boyicha topildi (async):', titleBooks);
     } catch (error) {
       console.error('Xatolik (title async):', error.message);
     }
@@ -77,5 +77,5 @@ module.exports = {
   getBooksCallback,
   getBookByISBN,
   getBooksByAuthor,
-  getBooksByTitle
+  getBooksByTitle 
 };
